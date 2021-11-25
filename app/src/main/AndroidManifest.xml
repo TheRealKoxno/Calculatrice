@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculatrice">
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity android:name=".presentation.settings.SettingsActivity" />
+        <activity android:name=".presentation.history.HistoryActivity" />
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE" />
 </manifest>

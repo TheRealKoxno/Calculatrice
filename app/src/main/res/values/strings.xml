@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Calculatrice</string>
+    <string name="settings_result_panel_title">Панель результата</string>
+    <string name="history_title">История</string>
+    <string name="settings_title">Настойки</string>
+    <string name="settings_precision_title">Точность вычислений</string>
+    <string name="settings_vibration_title">Виброотклик</string>
+
+    <string-array name="result_panel_types">
+        <item>Есть. Отображается слева</item>
+        <item>Есть. Отображается справа</item>
+        <item>Скрыта.</item>
+    </string-array>
 </resources>

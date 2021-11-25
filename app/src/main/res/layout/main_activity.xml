@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/main_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_clear"
+                style="@style/C"
+                android:layout_weight="1"
+                android:text="C" />
+
+            <TextView
+                android:id="@+id/main_back"
+                style="@style/Optionals"
+                android:layout_weight="1"
+                android:text="Del" />
+
+            <TextView
+                android:id="@+id/main_memory"
+                style="@style/Optionals"
+                android:layout_weight="1"
+                android:text="M" />
+
+            <TextView
+                android:id="@+id/main_divide"
+                style="@style/Signs"
+                android:layout_weight="1"
+                android:text="÷" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_seven"
+                style="@style/Digits"
+                android:layout_weight="1"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/main_eight"
+                style="@style/Digits"
+                android:layout_weight="1"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/main_nine"
+                style="@style/Digits"
+                android:layout_weight="1"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/main_multiple"
+                style="@style/Signs"
+                android:layout_weight="1"
+                android:text="×" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_four"
+                style="@style/Digits"
+                android:layout_weight="1"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/main_five"
+                style="@style/Digits"
+                android:layout_weight="1"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/main_six"
+                style="@style/Digits"
+                android:layout_weight="1"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/main_minus"
+                style="@style/Signs"
+                android:layout_weight="1"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_one"
+                style="@style/Digits"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/main_two"
+                style="@style/Digits"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/main_three"
+                style="@style/Digits"
+                android:layout_weight="1"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/main_plus"
+                style="@style/Signs"
+                android:layout_weight="1"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_point"
+                style="@style/Digits"
+                android:layout_weight="1"
+                android:text="." />
+
+            <TextView
+                android:id="@+id/main_zero"
+                style="@style/Digits"
+                android:layout_weight="1"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/main_equals"
+                style="@style/Equal"
+                android:layout_weight="2"
+                android:text="=" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/main_input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="number"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/main_result"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_activity_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        app:srcCompat="@drawable/ic_settings_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_result"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/main_button_container"
+        tools:text="0" />
+
+    <ImageView
+        android:id="@+id/main_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/main_activity_settings"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_history_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
