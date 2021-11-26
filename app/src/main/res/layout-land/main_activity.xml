@@ -166,7 +166,7 @@
                 android:id="@+id/main_zero"
                 style="@style/Digits"
                 android:layout_weight="1"
-                android:text="-" />
+                android:text="0" />
 
             <TextView
                 android:id="@+id/main_equals"
