@@ -27,7 +27,7 @@
                 android:id="@+id/main_back"
                 style="@style/Optionals"
                 android:layout_weight="1"
-                android:text="AC" />
+                android:text="Del" />
 
             <TextView
                 android:id="@+id/main_memory"
@@ -87,7 +87,7 @@
                 android:id="@+id/main_multiple"
                 style="@style/Signs"
                 android:layout_weight="1"
-                android:text="*" />
+                android:text="×" />
 
             <TextView
                 android:id="@+id/main_divide"
